@@ -7,30 +7,85 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 
-    <title>Document</title>
+    <title>Happy Birthday Nad</title>
 </head>
 
 <body>
     <div class="justify-center w-full flex h-screen items-center">
-        <audio controls class="absolute top-10 rounded-lg" autoplay >
-            <source src="wift-ost.mp3">
-        </audio>
+        <div class="absolute top-10">
+            <h1 class="text-center text-base mb-2"></h1>
+            <audio class="" autoplay loop>
+                <source src="wift-ost.mp3" type="audio/mpeg">
+            </audio>
+        </div>
         <div class="absolute">
             <h1 id="one" class="text-3xl font-semibold text-neutral-700">Hey Nadya!</h1>
         </div>
 
-        <h3 id="two"  class="text-2xl text-neutral-700">Its Your Birthdayy!! :D</h3>
+        <h3 id="two"  class="absolute text-2xl text-neutral-700">Its Your Birthdayy!! :D</h3>
         <h3 id="three"  class="text-center text-2xl text-neutral-700 absolute">Happy Sweet Seventeen!! <br> 🎊💫</h3>
 
-        <div id="four" class="absolute border border-neutral-600 px-2 py-1 rounded">
-            <p id="msg" class="text-base text-neutral-600">Wish you all the best! </p>
+        <div id="four" class="absolute border border-neutral-600 mx-10 px-3 py-1 rounded-lg">
+            <p id="msg" class="text-center text-base text-neutral-600">I know this is late :], but wish you the best!</p>
         </div>
 
-        <div id="gallery" class="">
 
+
+
+        <div id="gallery" class="absolute">
+            <!-- Swiper Container -->
+            <div class=" bg-white p-6 rounded-2xl shadow-xl md:w-96 w-80">
+                <h2 class="text-lg font-semibold text-center">Happy Birthday to you!!</h2>
+                <p class="text-sm text-center text-gray-500"></p>
+                <h3 class="text-md mt-3 text-center text-neutral-600">Your Birthday Playlist</h3>
+            
+            
+                <div class="swiper mySwiper mt-4">
+                    <div class="swiper-wrapper">
+            
+                        <div class="swiper-slide flex flex-col items-center bg-gray-100 p-3 rounded-xl shadow-md">
+                            <img src="img/WhatsApp Image 2025-03-02 at 12.31.56 AM (1).jpeg" class="rounded-lg w-full"
+                                alt="Memory 1">
+            
+                        </div>
+            
+                        <div class="swiper-slide flex flex-col items-center bg-gray-100 p-3 rounded-xl shadow-md">
+                            <img src="img/WhatsApp Image 2025-03-02 at 12.31.57 AM (1).jpeg" class="rounded-lg w-full"
+                                alt="Memory 2">
+            
+                        </div>
+            
+                        <div class="swiper-slide flex flex-col items-center bg-gray-100 p-3 rounded-xl shadow-md">
+                            <img src="img/WhatsApp Image 2025-03-02 at 12.31.57 AM.jpeg" class="rounded-lg w-full" alt="Memory 3">
+            
+                        </div>
+            
+                        <div class="swiper-slide flex flex-col items-center bg-gray-100 p-3 rounded-xl shadow-md">
+                            <img src="img/WhatsApp Image 2025-03-02 at 12.31.58 AM.jpeg" class="rounded-lg w-full" alt="Memory 3">
+            
+                        </div>
+            
+                        <div class="swiper-slide flex flex-col items-center bg-gray-100 p-3 rounded-xl shadow-md">
+                            <img src="img/WhatsApp Image 2025-03-02 at 12.31.59 AM (1).jpeg" class="rounded-lg w-full"
+                                alt="Memory 3">
+            
+                        </div>
+                    </div>
+            
+                    <div class="swiper-pagination mt-3"></div>
+                </div>
+            </div>
+
+
+
+            <div class=""></div>
         </div>
+
+
+
 
 
     </div>
@@ -58,8 +113,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="script.js"></script>
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1, // Show one slide at a time
+                spaceBetween: 20, // Space between slides
+                loop: true, // Enable infinite loop
+                autoplay: {
+                    delay: 2000, // Slide every 2 seconds
+                    disableOnInteraction: false, // Keep autoplay even after user interaction
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        });
+
+
+    </script>
 </body>
 
 </html>
