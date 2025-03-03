@@ -15,73 +15,77 @@
 
 <body>
     <div class="justify-center w-full flex h-screen items-center">
-        <div class="absolute top-10">
-            <h1 class="text-center text-base mb-2"></h1>
-            <audio class="" autoplay loop>
-                <source src="wift-ost.mp3" type="audio/mpeg">
-            </audio>
-        </div>
         <div class="absolute">
             <h1 id="one" class="text-3xl font-semibold text-neutral-700">Hey Nadya!</h1>
         </div>
 
-        <h3 id="two"  class="absolute text-2xl text-neutral-700">Its Your Birthdayy!! :D</h3>
-        <h3 id="three"  class="text-center text-2xl text-neutral-700 absolute">Happy Sweet Seventeen!! <br> 🎊💫</h3>
+        <h3 id="two" class="absolute text-2xl text-neutral-700">Its Your Birthdayy!! :D</h3>
+        <h3 id="three" class="text-center text-2xl text-neutral-700 absolute">Happy Sweet Seventeen!! <br> 🎊💫</h3>
+        <h3 id="four" class="text-center text-2xl text-neutral-700 absolute">Did you like the gift? 😎</h3>
 
-        <div id="four" class="absolute border border-neutral-600 mx-10 px-3 py-1 rounded-lg">
-            <p id="msg" class="text-center text-base text-neutral-600">I know this is late :], but wish you the best!</p>
+        <div id="five" class="absolute border border-neutral-600 mx-10 px-3 py-1 rounded-lg">
+            <p id="msg" class="text-center text-base text-neutral-600">I know this kinda late :] , but wish you the
+                best and I hope we stay in contact mkay</p>
         </div>
 
 
 
 
-        <div id="gallery" class="absolute">
+        <div id="gallery" class="absolute items-center justify-center flex flex-col mt-10">
             <!-- Swiper Container -->
-            <div class=" bg-white p-6 rounded-2xl shadow-xl md:w-96 w-80">
+            <div class=" bg-white p-6 rounded-2xl shadow-xl w-80">
                 <h2 class="text-lg font-semibold text-center">Happy Birthday to you!!</h2>
                 <p class="text-sm text-center text-gray-500"></p>
                 <h3 class="text-md mt-3 text-center text-neutral-600">Your Birthday Playlist</h3>
-            
-            
+
+
                 <div class="swiper mySwiper mt-4">
                     <div class="swiper-wrapper">
-            
+
                         <div class="swiper-slide flex flex-col items-center bg-gray-100 p-3 rounded-xl shadow-md">
                             <img src="img/WhatsApp Image 2025-03-02 at 12.31.56 AM (1).jpeg" class="rounded-lg w-full"
                                 alt="Memory 1">
-            
+
                         </div>
-            
+
                         <div class="swiper-slide flex flex-col items-center bg-gray-100 p-3 rounded-xl shadow-md">
                             <img src="img/WhatsApp Image 2025-03-02 at 12.31.57 AM (1).jpeg" class="rounded-lg w-full"
                                 alt="Memory 2">
-            
+
                         </div>
-            
+
                         <div class="swiper-slide flex flex-col items-center bg-gray-100 p-3 rounded-xl shadow-md">
                             <img src="img/WhatsApp Image 2025-03-02 at 12.31.57 AM.jpeg" class="rounded-lg w-full" alt="Memory 3">
-            
+
                         </div>
-            
+
                         <div class="swiper-slide flex flex-col items-center bg-gray-100 p-3 rounded-xl shadow-md">
                             <img src="img/WhatsApp Image 2025-03-02 at 12.31.58 AM.jpeg" class="rounded-lg w-full" alt="Memory 3">
-            
+
                         </div>
-            
+
                         <div class="swiper-slide flex flex-col items-center bg-gray-100 p-3 rounded-xl shadow-md">
                             <img src="img/WhatsApp Image 2025-03-02 at 12.31.59 AM (1).jpeg" class="rounded-lg w-full"
                                 alt="Memory 3">
-            
+
                         </div>
                     </div>
-            
-                    <div class="swiper-pagination mt-3"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="flex flex-col items-center justify-center mt-4">
+                    <h4 class="text-center text-sm mb-2">Play the music!*</h4>
+                    <audio controls>
+                        <source src="wift-ost.mp3" type="audio/mpeg">
+                    </audio>
                 </div>
             </div>
 
 
 
-            <div class=""></div>
+            <div class="p-10">
+                <h3 class="text-md mt
+                            -3 text-center text-neutral-600">I actually want to put some more of your photo here so it looks like a gallery or somting but dk which to put, tell me if you want it</h3>
+            </div>
         </div>
 
 
@@ -137,7 +141,11 @@
             });
         });
 
-
+            document.addEventListener("click", () => {
+                    let audio = document.getElementById("bg-audio");
+                    audio.muted = false;
+                    audio.play();
+                });
     </script>
 </body>
 

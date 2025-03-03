@@ -6,7 +6,7 @@ gsap.from("#one", {
   onComplete: onComplete,
 });
 function onComplete() {
-  gsap.to("#one, #two, #three, #four", {
+  gsap.to("#one, #two, #three, #four, #five", {
     opacity: 0,
     y: 50,
     delay: 2,
@@ -33,10 +33,19 @@ gsap.from("#three", {
   onComplete: onComplete,
 });
 gsap.from("#four", {
-  duration: 2,
+  duration: 1,
   stagger: 0.5,
   y: 50,
   delay: 12,
+  ease: "elastic",
+  opacity: 0,
+  onComplete: onComplete,
+});
+gsap.from("#five", {
+  duration: 3,
+  stagger: 0.5,
+  y: 50,
+  delay: 16,
   ease: "elastic",
   opacity: 0,
   onComplete: onComplete,
@@ -45,10 +54,9 @@ gsap.from("#gallery", {
   duration: 1,
   stagger: 0.5,
   y: 50,
-  delay: 18,
+  delay: 22,
   ease: "power1.out",
   opacity: 0,
-  onComplete: onComplete,
 });
 
 
